@@ -8,7 +8,11 @@ function multiplication(a, b) {
     return a * b;
 }
 function division(a, b) {
+    if(b === 0){
+        return "Nice Try"
+    }else{
     return a / b;
+    };
 }
 
 function operate(a, b, operator) { //calls the specified operator function and passes the two inputs into that func.
@@ -85,7 +89,11 @@ operatorButton.addEventListener("click", () =>{
     secondOp = parseInt(displayValue);
    const answer = operate(firstOp, secondOp, operator);
    displayValue = "";
-   updateDisplay(answer);
+   final = Math.round((answer + Number.EPSILON) * 100) / 100
+   if(answer === "Nice Try"){
+    updateDisplay(answer);
+   }
+   updateDisplay(final);
 })
 subtractionButton.addEventListener("click", () => {
     firstOp = parseInt(displayValue);
@@ -108,10 +116,11 @@ divisionButton.addEventListener("click", () => {
 backButton.addEventListener("click", () => {
 let arr = Array.from(displayValue);
 arr.pop();
-arr.join();
-displayValue = parseInt(arr);
-display.textContent = displayValue;
-}) // not working, starts doing math.
+let newDisplayValue = arr.join("");
+display.textContent = newDisplayValue;
+displayValue = newDisplayValue;
+return 
+}) // 
 
 
 
