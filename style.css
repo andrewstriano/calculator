@@ -8,17 +8,60 @@
 #calculator-container {
     width: 450px;
     height: 700px;
+    border: 1px solid black ;
+    padding: 25px;
+    background-color: rgb(168, 168, 168);
 }
 #calculator-container, #number-container, #function-container{
     flex-direction: column;
     align-content: center;
-    gap: 10px;
+    /* gap: 10px; */
+    border: 1px solid black ;
+    /* flex: 1; */
+    justify-content: space-between;
+}
+#button-container {
+    flex-grow: 3;
+}
+#clear-container {
+    flex:.5;
+    margin-bottom: 10px;
+}
+#function-container {
+    /* width: 100px;
+    height:400px */
+    flex: 1;
+}
+#number-container {
+    width: 350px;
 }
 .number-rows{ 
     display: flex;
+    flex-grow: 1;
 }
 .function, .numbers {
+    flex: 1 1 auto;
+    font-size: 35px;
+    padding: 0;
+}
+#zero-button {
     flex: 1;
-    height: 25px;
-    width: 25px;
+    font-size: 35px;
+}
+#display {
+    flex: 1;
+    font-size: 80px;
+    text-align: end;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+    
+}
+#clear-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#clear-container > button {
+    flex: 1;
 }
