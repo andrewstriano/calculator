@@ -87,7 +87,31 @@ operatorButton.addEventListener("click", () =>{
    displayValue = "";
    updateDisplay(answer);
 })
+subtractionButton.addEventListener("click", () => {
+    firstOp = parseInt(displayValue);
+    operator = subtract;
+    displayValue = "";
 
+})
+multiplicationButton.addEventListener("click", () => {
+    firstOp = parseInt(displayValue);
+    operator = multiplication;
+    displayValue = "";
+
+})
+divisionButton.addEventListener("click", () => {
+    firstOp = parseInt(displayValue);
+    operator = division;
+    displayValue = "";
+
+})
+backButton.addEventListener("click", () => {
+let arr = Array.from(displayValue);
+arr.pop();
+arr.join();
+displayValue = parseInt(arr);
+display.textContent = displayValue;
+}) // not working, starts doing math.
 
 
 
