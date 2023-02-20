@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="calculator-container" class="container">
-        <div class="brand">Texas Instruments <br/>TI-69</div>
-        <div id="display"></div>
-        <div id="clear-container" class="container">
-            <button id="clear-button">CLEAR</button>
-            <button id="back-button">BACK</button>
+      <div class="brand">Texas Instruments <br />TI-69</div>
+      <div id="display"></div>
+      <div id="clear-container" class="container">
+        <button id="clear-button">CLEAR</button>
+        <button id="back-button">BACK</button>
+      </div>
+      <div id="button-container" class="container">
+        <div id="number-container" class="container">
+          <div class="number-rows">
+            <button class="numbers" id="seven-button">7</button>
+            <button class="numbers" id="eight-button">8</button>
+            <button class="numbers" id="nine-button">9</button>
+          </div>
+          <div class="number-rows">
+            <button class="numbers" id="four-button">4</button>
+            <button class="numbers" id="five-button">5</button>
+            <button class="numbers" id="six-button">6</button>
+          </div>
+          <div class="number-rows">
+            <button class="numbers" id="one-button">1</button>
+            <button class="numbers" id="two-button">2</button>
+            <button class="numbers" id="three-button">3</button>
+          </div>
+          <button id="zero-button">0</button>
         </div>
-        <div id="button-container" class="container">
-            <div id="number-container" class="container">
-                <div class="number-rows">
-                    <button class="numbers" id="seven-button">7</button>
-                    <button class="numbers" id="eight-button">8</button>
-                    <button class="numbers" id="nine-button">9</button>
-                </div>                
-                <div class="number-rows">
-                    <button class="numbers" id="four-button">4</button>
-                    <button class="numbers" id="five-button">5</button>
-                    <button class="numbers" id="six-button">6</button>
-                </div>
-                <div class="number-rows">
-                    <button class="numbers" id="one-button">1</button>
-                    <button class="numbers" id="two-button">2</button>
-                    <button class="numbers" id="three-button">3</button>
-                </div>
-                <button id="zero-button">0</button>
-            </div>
-            <div id="function-container" class="container">
-                <button class="function" id="addition-button">+</button>
-                <button class="function" id="subtraction-button">-</button>
-                <button class="function" id="multiplication-button">X</button>
-                <button class="function" id="division-button">/</button>
-                <button class="function" id="operator-button">=</button>
-            </div>
+        <div id="function-container" class="container">
+          <button class="function" id="addition-button">+</button>
+          <button class="function" id="subtraction-button">-</button>
+          <button class="function" id="multiplication-button">X</button>
+          <button class="function" id="division-button">/</button>
+          <button class="function" id="operator-button">=</button>
         </div>
+      </div>
     </div>
-</body>
-<script src="main.js"></script>
+  </body>
+  <script src="main.js"></script>
 </html>
